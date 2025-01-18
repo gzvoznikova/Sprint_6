@@ -1,6 +1,5 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from locators.locators_landing_page import Testlocators
 from data import DataUrl
 import allure
 

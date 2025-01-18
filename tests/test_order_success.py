@@ -24,3 +24,4 @@ def test_order_upp_success(driver, button):
     order_page.fill_comment_field()
     order_page.click_on_element_create_order()
     order_page.click_on_element_confirm_order_yes()
+    assert order_page.check_of_button_check_status_of_order()

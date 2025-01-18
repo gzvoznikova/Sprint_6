@@ -2,6 +2,7 @@ import random
 
 class DataUrl:
     BASE_URL = 'https://qa-scooter.praktikum-services.ru/'
+    DZEN_URL = 'https://dzen.ru/?yredirect=true'
 
 class LandingAnswers:
     ANSWERS = {
@@ -21,8 +22,10 @@ class LandingAnswers:
     }
 
 class Person:
-    name = 'Иван'
-    lastname = 'Иванов'
+    name_list = ['Иван', 'Петр', 'Виктор']
+    name = f'{random.choice(name_list)}'
+    lastname_list = ['Иванов', 'Петров','Смирнов']
+    lastname = f'{random.choice(lastname_list)}'
     adress_list = ['Москва, Хорошевская, 11', 'Москва, Хорошевская, 55', 'Москва, Хорошевская, 88']
     adress = f"{random.choice(adress_list)}"
     random_phone_number = f"+7{random.randint(9000000000, 9999999999)}"
@@ -35,9 +38,3 @@ class Person:
     random_color = f"{random.choice(colors)}"
     comment_list = ['Первый коммент', 'Второй коммент', 'Третий коммент']
     comment = f"{random.choice(comment_list)}"
-
-    test_data_user1 = ['Геральт', 'ИзРивии', 'Новиградский проспект, 16', 'Университет', '+78005553535', '24.04.2024',
-                 'Хм, распогодилось :)']
-
-    test_data_user2 = ['Цирилла Фиона', 'Рианнон', 'Шалфей и Розмарин', 'Сокол', '+788811199922', '28.04.2024',
-                 'Ужасненько хочется покататься!']

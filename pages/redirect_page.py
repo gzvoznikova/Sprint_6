@@ -22,3 +22,4 @@ class RedirectPage(BasePage):
         self.wait.until(expected_conditions.presence_of_element_located(Oder_page_locators.title_of_page))
         return self.driver.title
 
+

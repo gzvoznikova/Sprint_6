@@ -75,3 +75,7 @@ class OrderPage(BasePage):
     @allure.step('Клик по кнопке Да - подтверждение заказа')
     def click_on_element_confirm_order_yes(self):
        self.click_on_element(Oder_page_locators.BUTTON_CONFIRM_ORDER_YES)
+
+    @allure.step('Проверить отображение кнопки "Посмотреть статус" после создания заказа')
+    def check_of_button_check_status_of_order(self):
+        return self.check_displaying_of_element(Oder_page_locators.BUTTON_CHECK_STATUS_OF_ORDER)
